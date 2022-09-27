@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+    default-init-method="init" default-destroy-method="destroy">
+    
+    <bean id="persona1" class="com.test.beans.Persona">
+        <property name="id" value="1"></property>
+        <property name="nombre" value="Daniel"></property>
+        <property name="vivienda" ref="piso"></property>
+        <property name="ciudad" ref="ciudad"></property>
+    </bean>
+    
+    <bean id="piso" class="com.test.beans.Piso">
+        
+    </bean>
+    
+    <bean id="chalet" class="com.test.beans.Chalet">
+        
+    </bean>
+    
+    <bean id="ciudad" class="com.test.beans.Ciudad">
+        <property name="id" value="1"></property>
+        <property name="nombre" value="Madrid"></property>
+        <property name="pais" ref="pais"></property>
+    </bean>
+    
+    <bean id="pais" class="com.test.beans.Pais">
+        <property name="id" value="1"></property>
+        <property name="nombre" value="España"></property>
+    </bean>
+    
+</beans>
+

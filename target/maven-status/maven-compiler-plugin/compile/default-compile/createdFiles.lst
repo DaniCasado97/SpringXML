@@ -1,0 +1,8 @@
+com\text\interfaces\ITeam.class
+com\text\interfaces\IVivienda.class
+com\test\beans\Chalet.class
+com\test\springxml\App.class
+com\test\beans\Pais.class
+com\test\beans\Piso.class
+com\test\beans\Persona.class
+com\test\beans\Ciudad.class
